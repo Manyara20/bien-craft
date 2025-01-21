@@ -104,6 +104,42 @@ var swiper = new Swiper(".logo-slider", {
    }
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+   const counters = document.querySelectorAll(".counter");
+
+   counters.forEach(counter => {
+      const target = +counter.getAttribute("data-target"); // Get the target number
+      const increment = target / 100; // Increment value for smooth animation
+
+      let current = 0;
+
+      const updateCounter = () => {
+         if (current < target) {
+            current += increment;
+            counter.textContent = `${Math.ceil(current)}+`;
+            setTimeout(updateCounter, 30); // Update every 20ms
+         } else {
+            counter.textContent = `${target}+`; // Ensure the final value is accurate
+         }
+      };
+
+      updateCounter();
+   });
+});
+
+var swiper = new Swiper('.home-slider', {
+   speed: 1000,
+   autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+   },
+   navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+   },
+});
+
+
 
 
 

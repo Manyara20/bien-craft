@@ -5,6 +5,10 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta property="og:title" content="Bien Craft" />
+   <meta property="og:description" content="We are a forward-thinking company passionate about delivering innovative solutions in design, 3D visualization, and project management." />
+   <meta property="og:image" content="https://www.biencraft.co.ke/images/og-image.jpg" />
+   <meta property="og:url" content="https://www.biencraft.co.ke" />
    <title>Bien Craft</title>
    <link rel="icon" type="image/jpg" href="images/logofav.jpg">
 
@@ -31,7 +35,7 @@
    <!-- HEADER -->
    <header class="header">
       <div style="display: flex; justify-content: space-between; align-items: center; padding: 0 1rem;">
-        <a href="#"><img src="images/logoo.png" alt="logo" class="logo" style="width: 15.25rem; height: auto; margin: none; " /></a> 
+        <a href="#"><img src="images/bold_logo.jpg" alt="logo" class="logo" style="width: 15.25rem; height: auto; margin: none; " /></a> 
       <!-- <a href="#" style=" margin: none;" class="logo">Bien<span>Craft</span></a> -->
       </div>
       
@@ -48,7 +52,7 @@
       <div class="icons">
          <div id="menu-btn" class="fas fa-bars"></div>
          <div id="info-btn" class="fas fa-info-circle"></div>
-         <div id="search-btn" class="fas fa-search"></div>
+         <div id="search-btn" class="fab fa-whatsapp"><a href="https://wa.me/+254729799144"></a></div>
          <div id="login-btn" class="fas fa-user"></div>
       </div>
 
@@ -98,7 +102,7 @@
          <a href="#" class="fab fa-facebook-f"></a>
          <a href="#" class="fab fa-twitter"></a>
          <a href="#" class="fab fa-instagram"></a>
-         <a href="#" class="fab fa-linkedin"></a>
+         <a href="#" class="fab fa-whatsapp"></a>
       </div>
    </div>
 
@@ -106,7 +110,11 @@
    <section class="home" id="home">
       <div class="swiper home-slider">
          <div class="swiper-wrapper">
-            <section class="swiper-slide slide" style="background: url(images/slider1.jpg) no-repeat;" class="zoom">
+            <section class="swiper-slide slide">
+               <video class="background-video" autoplay loop muted playsinline>
+                  <source src="images/bienvideo.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+               </video>
                <div class="content">
                   <h3>Design, build and renovate</h3>
                   <p>From innovative designs to flawless execution, Biencraft Construction Company 
@@ -114,16 +122,24 @@
                   <a href="#about" class="btn">get started</a>
                </div>
             </section>
-
-            <section class="swiper-slide slide" style="background: url(images/slider2.jpg) no-repeat;">
+   
+            <section class="swiper-slide slide">
+               <video class="background-video" autoplay loop muted playsinline>
+                  <source src="images/about-vid.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+               </video>
                <div class="content">
                   <h3>Building Homes, Crafting Dreams</h3>
                   <p>Experience the perfect blend of functionality and elegance with our residential construction services. We turn your vision into a place you’ll love to call home.</p>
                   <a href="#about" class="btn">get started</a>
                </div>
             </section>
-
-            <section class="swiper-slide slide" style="background: url(images/slider3.jpg) no-repeat;">
+   
+            <section class="swiper-slide slide">
+               <video class="background-video" autoplay loop muted playsinline>
+                  <source src="images/bienvideo.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+               </video>
                <div class="content">
                   <h3>from concept to creation</h3>
                   <p>From initial concept to the final creation, we guide you through every step of the construction journey,
@@ -132,7 +148,7 @@
                </div>
             </section>
          </div>
-
+   
          <div class="swiper-button-next"></div>
          <div class="swiper-button-prev"></div>
       </div>
@@ -144,7 +160,7 @@
 
       <div class="row">
          <div class="video">
-            <video src="images/about-vid.mp4" loop muted autoplay></video>
+            <video src="images/bienvideo.mp4" loop muted autoplay></video>
          </div>
 
          <div class="content">
@@ -158,87 +174,64 @@
             <a href="#services" class="btn">read more</a>
          </div>
       </div>
+      
 
       <div class="box-container">
          <div class="box">
-            <h3>10+</h3>
+            <h3 class="counter" data-target="10">10+</h3>
             <p>years of experience</p>
          </div>
 
          <div class="box">
-            <h3>1500+</h3>
+            <h3 class="counter" data-target="450">450+</h3>
             <p>projects completed</p>
          </div>
 
          <div class="box">
-            <h3>790+</h3>
+            <h3 class="counter" data-target="290">290+</h3>
             <p>satiesfied clients</p>
          </div>
 
          <div class="box">
-            <h3>450+</h3>
+            <h3 class="counter" data-target="150">150+</h3>
             <p>active workers</p>
          </div>
       </div>
    </section>
+
+   
 
    <!-- SERVICES -->
    <section class="services" id="services">
       <h1 class="heading">our services</h1>
 
       <div class="box-container">
-         <div class="box">
-            <img src="images/service-1.png" alt="">
-            <h3>building construction</h3>
-            <p>We deliver top-notch construction services, ensuring durable and high-quality structures for residential and commercial projects.</p>
-         </div>
+      
 
          <div class="box">
-            <img src="images/service-2.png" alt="">
-            <h3>house renovation</h3>
-            <p>Transform your home with our expert renovation services, tailored to revitalize and enhance your living space.</p>
+            <img src="images/service-5.png" alt="">
+            <h3>Design and visualization</h3>
+            <p>Transforming ideas into vivid, detailed 3D models and visual presentations, allowing clients to see their projects come to life before construction begins.</p>
          </div>
 
          <div class="box">
             <img src="images/service-3.png" alt="">
             <h3>architechture design</h3>
-            <p>Our innovative architectural designs blend functionality and aesthetics to create inspiring and practical spaces.</p>
+            <p>Crafting innovative and functional building designs tailored to meet client needs, blending aesthetics, sustainability, and practicality.</p>
          </div>
 
          <div class="box">
-            <img src="images/service-4.png" alt="">
-            <h3>material supply</h3>
-            <p>We provide reliable and high-quality construction materials to meet all your building needs.</p>
-         </div>
-
-         <div class="box">
-            <img src="images/service-5.png" alt="">
-            <h3>construction consultant</h3>
-            <p>Our expert consultants offer professional advice and guidance to ensure the success of your construction projects.</p>
-         </div>
-
-         <div class="box">
-            <img src="images/service-6.png" alt="">
+            <img src="images/service-2.png" alt="">
             <h3>interior design</h3>
-            <p>Enhance your interiors with our creative designs that combine style, comfort, and functionality.</p>
-         </div>
-
-         <div class="box">
-            <img src="images/service-7.png" alt="">
-            <h3>building maintenance</h3>
-            <p>Keep your property in top condition with our comprehensive building maintenance solutions.</p>
+            <p>Enhancing interior spaces with personalized layouts, finishes, and decor to create comfortable, stylish, and functional environments.</p>
          </div>
 
          <div class="box">
             <img src="images/service-8.png" alt="">
-            <h3>building renovation</h3>
-            <p>Upgrade and modernize your spaces with our expert renovation services tailored to your needs.</p>
+            <h3>project management</h3>
+            <p>Overseeing every phase of the project, from planning to execution, ensuring timely delivery, quality control, and budget adherence.</p>
          </div>
-         <div class="box">
-            <img src="images/service-8.png" alt="">
-            <h3>building renovation</h3>
-            <p>Upgrade and modernize your spaces with our expert renovation services tailored to your needs.</p>
-         </div>
+
       </div>
    </section>
 
@@ -249,7 +242,7 @@
       <div class="box-container zoom">
          <a href="images/project-ngong.jpg" class="box">
             <div class="image">
-               <img src="images/project-ngong.jpg" alt="">
+               <img src="images/ngong/ngong_1.jpg" alt="">
             </div>
             <div class="content">
                <div class="info">
@@ -260,72 +253,196 @@
             </div>
          </a>
 
-         <a href="images/project-2.jpg" class="box">
+         <a href="images/muranga/muranga_4.jpg" class="box">
             <div class="image">
-               <img src="images/project-2.jpg" alt="">
+               <img src="images/muranga/muranga_1.jpg" alt="">
             </div>
             <div class="content">
                <div class="info">
-                  <h3>dream home</h3>
+                  <h3>Muranga Project</h3>
+                  <p>Completed dream home </p>
+               </div>
+               <i class="fas fa-plus"></i>
+            </div>
+         </a>
+
+         <a href="images/kamulu/kamulu_display cabinet.jpeg" class="box">
+            <div class="image">
+               <img src="images/kamulu/kamulu_ceiling.jpeg" alt="">
+            </div>
+            <div class="content">
+               <div class="info">
+                  <h3>Kamulu, Machakos</h3>
+                  <p>interior design and decor</p>
+               </div>
+               <i class="fas fa-plus"></i>
+            </div>
+         </a>
+
+         <a href="images/alchemist/alchemist_1.jpg" class="box">
+            <div class="image">
+               <img src="images/alchemist/alchemist_2.jpg" alt="">
+            </div>
+            <div class="content">
+               <div class="info">
+                  <h3>Alchemist, Westlands</h3>
+                  <p>Transforming business spaces</p>
+               </div>
+               <i class="fas fa-plus"></i>
+            </div>
+         </a>
+
+         <a href="images/kenyatta/kenyatta_road.jpg" class="box">
+            <div class="image">
+               <img src="images/kenyatta/kenyatta_road.jpg" alt="">
+            </div>
+            <div class="content">
+               <div class="info">
+                  <h3>Kenyatta Road Project</h3>
                   <p>construction, design</p>
                </div>
                <i class="fas fa-plus"></i>
             </div>
          </a>
 
-         <a href="images/project-3.jpg" class="box">
+         <a href="images/next_home.jpg" class="box">
             <div class="image">
-               <img src="images/project-3.jpg" alt="">
+               <img src="images/next_home.jpg" alt="">
             </div>
             <div class="content">
                <div class="info">
-                  <h3>dream home</h3>
-                  <p>construction, design</p>
-               </div>
-               <i class="fas fa-plus"></i>
-            </div>
-         </a>
-
-         <a href="images/project-4.jpg" class="box">
-            <div class="image">
-               <img src="images/project-4.jpg" alt="">
-            </div>
-            <div class="content">
-               <div class="info">
-                  <h3>dream home</h3>
-                  <p>construction, design</p>
-               </div>
-               <i class="fas fa-plus"></i>
-            </div>
-         </a>
-
-         <a href="images/project-5.jpg" class="box">
-            <div class="image">
-               <img src="images/project-5.jpg" alt="">
-            </div>
-            <div class="content">
-               <div class="info">
-                  <h3>dream home</h3>
-                  <p>construction, design</p>
-               </div>
-               <i class="fas fa-plus"></i>
-            </div>
-         </a>
-
-         <a href="images/project-6.jpg" class="box">
-            <div class="image">
-               <img src="images/project-6.jpg" alt="">
-            </div>
-            <div class="content">
-               <div class="info">
-                  <h3>dream home</h3>
-                  <p>construction, design</p>
+                  <h3>next dream home</h3>
+                  <p>let's construct, design...</p>
                </div>
                <i class="fas fa-plus"></i>
             </div>
          </a>
       </div>
    </section>
+
+ <!-- REVIEWS -->
+ <section class="reviews">
+   <h1 class="heading">clients reviews</h1>
+
+   <div class="swiper reviews-slider">
+      <div class="swiper-wrapper">
+         <div class="swiper-slide slide">
+            <p>Biencraft exceeded our expectations in building our family’s dream home. Their professionalism, creativity, 
+               and use of modern tools like 3D visualization made the process smooth and precise.
+               The team skillfully blended our ideas with their expertise to create a home that perfectly fits our zcodes.jpeg</p>
+            <div class="user">
+               <img src="images/zcodes.jpeg" alt="">
+               <div class="info">
+                  <h3>zcodes</h3>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <p>Biencraft exceeded our expectations in building our family’s dream home. Their professionalism, creativity, 
+               and use of modern tools like 3D visualization made the process smooth and precise.
+               The team skillfully blended our ideas with their expertise to create a home that perfectly fits our lifestyle</p>
+            <div class="user">
+               <img src="images/zcodes.jpeg" alt="">
+               <div class="info">
+                  <h3>zcodes</h3>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <p>Biencraft exceeded our expectations in building our family’s dream home. Their professionalism, creativity, 
+               and use of modern tools like 3D visualization made the process smooth and precise.
+               The team skillfully blended our ideas with their expertise to create a home that perfectly fits our lifestyle</p>
+            <div class="user">
+               <img src="images/zcodes.jpeg" alt="">
+               <div class="info">
+                  <h3>jhon deo</h3>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <p>Biencraft exceeded our expectations in building our family’s dream home. Their professionalism, creativity, 
+               and use of modern tools like 3D visualization made the process smooth and precise.
+               The team skillfully blended our ideas with their expertise to create a home that perfectly fits our lifestyle</p>
+            <div class="user">
+               <img src="images/zcodes.jpeg" alt="">
+               <div class="info">
+                  <h3>zcodes</h3>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <p>Biencraft exceeded our expectations in building our family’s dream home. Their professionalism, creativity, 
+               and use of modern tools like 3D visualization made the process smooth and precise.
+               The team skillfully blended our ideas with their expertise to create a home that perfectly fits our lifestyle</p>
+            <div class="user">
+               <img src="images/zcodes.jpeg" alt="">
+               <div class="info">
+                  <h3>zcodes</h3>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <p>Biencraft exceeded our expectations in building our family’s dream home. Their professionalism, creativity, 
+               and use of modern tools like 3D visualization made the process smooth and precise.
+               The team skillfully blended our ideas with their expertise to create a home that perfectly fits our lifestyle</p>
+            <div class="user">
+               <img src="images/zcodes.jpeg" alt="">
+               <div class="info">
+                  <h3>zcodes</h3>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<hr>
 
    <!-- BLOGS -->
    <section class="blogs" id="blogs">
@@ -409,7 +526,7 @@
 
       <div class="row">
          <iframe class="map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3902.553860393622!2d-77.06070788526978!3d-12.005341891494876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cf4c80d83faf%3A0x3a96a45de0f26696!2sMAESTRO%20HOME%20CENTER!5e0!3m2!1ses!2spe!4v1644898782874!5m2!1ses!2spe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.9100946376157!2d36.880922999999996!3d-1.2225488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f151757eab6c5%3A0x43a2041ac12048f9!2sPlug%20%26%20Work%20Africa!5e0!3m2!1sen!2ske!4v1737461203068!5m2!1sen!2ske"
             allowfullscreen="" loading="lazy">
          </iframe>
 
@@ -423,17 +540,17 @@
          </form>
       </div>
    </section>
-
+ 
   
 
 
    <!-- FOOTER -->
-   <section class="footer">
+   <section class="footer swiper-slide slide" style="background: url(images/bienfooter.jpg) ;">
       <div class="icons">
-         <a href="#" class="fab fa-facebook-f"></a>
-         <a href="#" class="fab fa-twitter"></a>
-         <a href="#" class="fab fa-instagram"></a>
-         <a href="#" class="fab fa-github"></a>
+         <a href="https://www.facebook.com/share/18Lod1zPzc/" class="fab fa-facebook-f"></a>
+         <a href="https://x.com/Bien_craft?t=IH92FLoih_qrCwRhgIoOog&s=09" class="fab fa-solid fa-twitter"></a>
+         <a href="https://wa.me/+254729799144" class="fab fa-whatsapp"></a>
+         <a href="https://www.tiktok.com/@bienhomes?_t=ZM-8t67IKxq4UY&_r=1" class="fab fa-tiktok"></a>
      </div>
 
       <div class="credit">Created by <span>Zcodes</span> | all rights reserved</div>
