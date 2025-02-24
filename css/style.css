@@ -54,11 +54,12 @@ section {
   display: flex;
   justify-content: end;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #eee;
   letter-spacing: 0.8rem;
   font-family: "Hyperlegible";
   padding-left: inherit;
+  
 }
 
 
@@ -79,16 +80,23 @@ section {
   display: inline-block;
   margin-top: 1rem;
   padding: 1rem 3rem;
-  background: var(--yellow);
+  background: var(--yellow); /* Assuming this is a construction-like yellow, e.g., #FFC107 */
   color: var(--white);
   cursor: pointer;
   font-size: 1.7rem;
   text-transform: capitalize;
   transition: 0.2s linear;
+  border: 2px solid #333; /* Adds a sturdy, industrial border */
+  box-shadow: 2.5px 2.5px 0px #000; /* Bold shadow for a "stamped" effect */
+  font-family: 'Arial', sans-serif; /* A strong, utilitarian font */
+  font-weight: 700; /* Heavier weight for emphasis */
+  text-align: center;
+  background-image: linear-gradient(to bottom, var(--yellow), #e6a700);
 }
 .btn:hover {
-  background: var(--yellow);
-  color: var(--black);
+  transform: translate(2px, 2px); /* Slight shift on hover, like pressing a heavy button */
+  box-shadow: 2px 2px 0px #000; /* Reduced shadow for "pressed" feel */
+  background-image: linear-gradient(to bottom, #e6a700, var(--yellow));
 }
 
 @keyframes fadeIn {
@@ -722,6 +730,14 @@ section {
   height: 3rem;
   pointer-events: none;
   user-select: none;
+}
+.logo{
+  display: flex; 
+  align-items: center; 
+  color: var(--yellow)
+}
+.logo-p{
+  color: var(--yellow);
 }
 
 .footer {
