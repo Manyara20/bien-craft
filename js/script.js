@@ -3,6 +3,7 @@ let navbar = document.querySelector('.header .navbar');
 let searchForm = document.querySelector('.header .search-form');
 let loginForm = document.querySelector('.header .login-form');
 let contactInfo = document.querySelector('.contact-info');
+let process = document.querySelector('.process');
 
 document.querySelector('#menu-btn').onclick = () => {
    navbar.classList.toggle('active');
@@ -139,6 +140,38 @@ var swiper = new Swiper('.home-slider', {
    },
 });
 
+var process_slide = new Swiper('.process', {
+   speed: 1000,
+   autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+   },
+   slidesPerView: 3, // Show 3 slides at once
+   spaceBetween: 20, // Add spacing between slides
+   loop: true, // Enable continuous sliding
+   pagination: {
+      el: '.swiper-pagination', // Optional: Add pagination if desired
+      clickable: true,
+   },
+   navigation: { // Optional: Add navigation arrows if in your HTML
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+   },
+   breakpoints: { // Responsive adjustments
+      0: {
+         slidesPerView: 1, // 1 slide on very small screens
+         spaceBetween: 10,
+      },
+      768: {
+         slidesPerView: 2, // 2 slides on tablets
+         spaceBetween: 15,
+      },
+      1024: {
+         slidesPerView: 3, // 3 slides on desktop
+         spaceBetween: 20,
+      },
+   },
+});
 
 
 
