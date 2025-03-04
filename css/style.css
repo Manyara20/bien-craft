@@ -143,7 +143,7 @@ h3{
   color: var(--black);
   text-transform: capitalize;
   margin: 0 3rem;
-  font-family: Kumar One Outline;
+  font-family: Poppins;
 }
 .header .navbar a:hover {
   color: var(--yellow);
@@ -442,7 +442,7 @@ h3{
   font-size: 3.5rem;
   color: var(--black);
   text-transform: capitalize;
-  font-family: Kumar One Outline;
+  font-family: Poppins;
 }
 .about .row .content p {
   font-size: 1.5rem;
